@@ -45,7 +45,7 @@ h1 span {
   color: var(--dark-grayish-red);
   font-weight: 600;
 }
-.main p {
+.main-p {
   color: var(--desaturated-red);
   font-size: 16px;
   font-weight: 400px;
@@ -54,7 +54,7 @@ h1 span {
   line-height: 27px;
 }
 
-#email {
+input {
   width: 420px;
   height: 55px;
   font-weight: 700;
@@ -63,11 +63,14 @@ h1 span {
   border-radius: 50px;
   padding-left: 35px;
 }
+#email::placeholder {
+  color: var(--desaturated-red);
+}
 button {
   position: absolute;
   margin-left: -100px;
   width: 100px;
-  height: 57px;
+  height: 59px;
   background-image: radial-gradient(at left 70%, #f5b8b7, #ef9493);
   border: none;
   border-radius: 50px;
@@ -78,7 +81,23 @@ button:hover {
   background-image: radial-gradient(at left 40%, #fcdadb, #f7c9c9);
 }
 .email-btn {
-  padding: 18px;
+  padding: 10px;
+}
+.error-img {
+  position: absolute;
+  top: 17px;
+  left: -40px;
+  display: none;
+}
+.error-input {
+  border: 2px solid var(--soft-red);
+}
+.error-p {
+  font-size: 14px;
+  color: var(--soft-red);
+  margin-top: 10px;
+  margin-left: 34px;
+  display: none;
 }
 
 .main-image {
@@ -142,7 +161,7 @@ button:hover {
   h1 span {
     font-weight: 700;
   }
-  .main p {
+  .main-p {
     font-size: 14px;
     letter-spacing: 0px;
     line-height: 22px;
@@ -151,15 +170,19 @@ button:hover {
   #email {
     width: 280px;
     height: 46px;
+    font-size: 14px;
   }
   button {
     position: relative;
-    top: -48px;
-    left: 7px;
+    top: -50px;
+    left: 9px;
     width: 70px;
-    height: 48px;
+    height: 50px;
   }
   .email-btn {
-    padding: 13px;
+    padding: 8px;
+  }
+  .error-img {
+    top: 12px;
   }
 }
