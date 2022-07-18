@@ -18,7 +18,7 @@ body {
 .main {
   width: 100%;
   height: 800px;
-  background-color: white;
+  background-image: url("../images/bg-pattern-desktop.svg");
 }
 .content {
   float: left;
